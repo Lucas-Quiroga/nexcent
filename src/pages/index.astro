@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import Clients from "../components/Clients.astro";
+import Comunnity from "../components/Community.astro";
+import Unlock from "../components/Unlock.astro";
+import Achievements from "../components/Achievements.astro";
+import Calender from "../components/Calender.astro";
+import Customers from "../components/Customers.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <div class="container">
+    <Hero />
+    <Clients />
+    <Comunnity />
+    <Unlock />
+    <Achievements />
+    <Calender />
+    <Customers />
+  </div>
+</Layout>
+
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+</style>

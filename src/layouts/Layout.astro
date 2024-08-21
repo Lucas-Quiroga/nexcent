@@ -1,0 +1,92 @@
+---
+import Navbar from "../components/Navbar.astro";
+import "@fontsource-variable/inter";
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <style is:global>
+      :root {
+        --primary-color: #4caf4f;
+        --secondary-color: #263238;
+        --info-color: #2194f3;
+        --neutral-black: #263238;
+        --neutral-d-grey: #4d4d4d;
+        --neutral-grey: #717171;
+        --neutral-l-grey: #89939e;
+        --neutral-grey-blue: #abbed1;
+        --neutral-silver: #f5f7fa;
+        --neutral-white: #ffffff;
+
+        --font-size-body1: 18px;
+        --line-height-body1: 28px;
+        --font-size-body2: 16px;
+        --line-height-body2: 24px;
+        --font-size-body3: 14px;
+        --line-height-body3: 20px;
+        --font-size-body4: 12px;
+        --line-height-body4: 16px;
+
+        max-width: 1440px;
+        margin: 0 auto;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: "Inter Variable", sans-serif;
+        background-color: #ffffff;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        --sb-track-color: #ffffff;
+        --sb-thumb-color: #4caf4f;
+        --sb-size: 6px;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      body::-webkit-scrollbar {
+        width: var(--sb-size);
+      }
+
+      body::-webkit-scrollbar-track {
+        background: var(--sb-track-color);
+        border-radius: 4px;
+      }
+
+      body::-webkit-scrollbar-thumb {
+        background: var(--sb-thumb-color);
+        border-radius: 4px;
+      }
+
+      @supports not selector(::-webkit-scrollbar) {
+        body {
+          scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <Navbar />
+    <slot />
+  </body>
+</html>
