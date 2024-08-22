@@ -1,0 +1,9 @@
+export { default as Hero } from "./Hero.astro";
+export { default as Clients } from "./Clients.astro";
+export { default as Community } from "./Community.astro";
+export { default as Unlock } from "./Unlock.astro";
+export { default as Achievements } from "./Achievements.astro";
+export { default as Calender } from "./Calender.astro";
+export { default as Customers } from "./Customers.astro";
+export { default as Updates } from "./Updates.astro";
+export { default as Footer } from "./Footer.astro";
