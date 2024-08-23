@@ -1,5 +1,14 @@
 ---
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "../i18n/utils";
+import { languages } from "../i18n/ui";
 
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 
 <nav class="nav" aria-label="Primary Navigation">
@@ -7,27 +16,63 @@
   <div class="nav__container">
     <ul class="nav__list">
       <li class="nav__item">
-        <a href="#Service" class="nav__link">Service</a>
+        <a href={translatePath("#services")} class="nav__link">
+          {t("nav.service")}
+        </a>
       </li>
       <li class="nav__item">
-        <a href="#feature" class="nav__link">Feature</a>
+        <a href="#feature" class="nav__link">{t("nav.feature")} </a>
       </li>
       <li class="nav__item">
-        <a href="#product" class="nav__link">Product</a>
+        <a href="#product" class="nav__link">{t("nav.product")} </a>
       </li>
       <li class="nav__item">
-        <a href="#testimonial" class="nav__link">Testimonial</a>
+        <a href="#testimonial" class="nav__link">{t("nav.testimonial")} </a>
       </li>
       <li class="nav__item">
-        <a href="#faq" class="nav__link">FAQ</a>
+        <a href="#faq" class="nav__link">{t("nav.faq")} </a>
       </li>
     </ul>
   </div>
   <div class="nav__button-container">
     <button class="nav__button-login">Login</button>
     <button class="nav__button-signup">Sign up</button>
+    <select id="language-select" class="nav__button-select">
+      {
+        Object.entries(languages).map(([langCode, label]) => (
+          <option
+            value={langCode}
+            selected={langCode === lang}
+            class="nav__button-option"
+          >
+            {langCode.toLocaleUpperCase()}
+          </option>
+        ))
+      }
+    </select>
   </div>
 </nav>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const selectElement = document.getElementById("language-select");
+
+    if (selectElement) {
+      selectElement.addEventListener("change", (event) => {
+        const target = event.target as HTMLSelectElement;
+        if (target) {
+          const selectedLang = target.value;
+          const currentPath = window.location.pathname;
+          if (selectedLang === "en") {
+            window.location.href = "/";
+            return;
+          }
+          window.location.href = `/${selectedLang}${currentPath}`;
+        }
+      });
+    }
+  });
+</script>
 
 <style>
   .nav {
@@ -107,5 +152,23 @@
     font-size: 14px;
     line-height: 20px;
     border-radius: 6px;
+  }
+
+  .nav__button-select {
+    width: 40px;
+    height: 40px;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 6px;
+    color: #4caf4f;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+  }
+
+  .nav__button-option {
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
   }
 </style>

@@ -1,0 +1,38 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import {
+  Hero,
+  Clients,
+  Community,
+  Unlock,
+  Achievements,
+  Calender,
+  Customers,
+  Updates,
+  Footer,
+} from "../../components/index.js";
+---
+
+<Layout title="Welcome to Astro.">
+  <div class="container" style="--gap-size: 40px;">
+    <Hero />
+    <Clients />
+    <Community />
+  </div>
+  <div class="container" style="--gap-size: 48px;">
+    <Unlock />
+    <Achievements />
+    <Calender />
+    <Customers />
+    <Updates />
+    <Footer />
+  </div>
+</Layout>
+
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-size);
+  }
+</style>
