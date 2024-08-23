@@ -1,5 +1,14 @@
 ---
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "../i18n/utils";
+import { languages } from "../i18n/ui";
 
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 
 <section class="feature">
@@ -9,17 +18,17 @@
   <div class="feature__content">
     <div class="feature__text">
       <p class="feature__headline">
-        The unseen of spending three <br /> years at Pixelgrade
+        {
+          t("feature.headline")
+            .split("<br />")
+            .map((line) => <>{line}</>)
+        }
       </p>
       <p class="feature__description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
-        justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque
-        placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis.
-        Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa
-        pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.
+        {t("feature.description")}
       </p>
     </div>
-    <button class="feature__button">Learn More</button>
+    <button class="feature__button">{t("feature.button")}</button>
   </div>
 </section>
 

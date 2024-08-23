@@ -1,16 +1,22 @@
 ---
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "../i18n/utils";
+import { languages } from "../i18n/ui";
 
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 
 <footer class="footer">
   <div class="footer__cta">
-    <p class="footer__cta-text">Pellentesque suscipit fringilla libero eu.</p>
+    <p class="footer__cta-text">{t("footer.cta")}</p>
     <button class="footer__cta-button">
-      Get a Demo <img
-        src="/whitearrow.png"
-        alt="Arrow icon"
-        class="footer__cta-icon"
-      />
+      {t("footer.button")}
+      <img src="/whitearrow.png" alt="Arrow icon" class="footer__cta-icon" />
     </button>
   </div>
   <div class="footer__content">
@@ -22,8 +28,12 @@
         class="footer__company-logo"
       />
       <div class="footer__company-info">
-        <p class="footer__company-copyright">Copyright © 2020 Nexcent Ltd.</p>
-        <p class="footer__company-rights">All rights reserved</p>
+        <p class="footer__company-copyright">
+          {t("footer.copyright")}
+        </p>
+        <p class="footer__company-rights">
+          {t("footer.privacy")}
+        </p>
       </div>
       <!-- Social links -->
       <div class="footer__social">
@@ -36,30 +46,56 @@
     <!-- Links -->
     <div class="footer__links">
       <div class="footer__links-group">
-        <p class="footer__links-title">Company</p>
+        <p class="footer__links-title">
+          {t("footer.linksTitle1")}
+        </p>
         <ul class="footer__links-list">
-          <li class="footer__links-item">About Us</li>
-          <li class="footer__links-item">Blog</li>
-          <li class="footer__links-item">Contact us</li>
-          <li class="footer__links-item">Pricing</li>
-          <li class="footer__links-item">Testimonials</li>
+          <li class="footer__links-item">
+            {t("footer.link1")}
+          </li>
+          <li class="footer__links-item">
+            {t("footer.link2")}
+          </li>
+          <li class="footer__links-item">
+            {t("footer.link3")}
+          </li>
+          <li class="footer__links-item">
+            {t("footer.link4")}
+          </li>
+          <li class="footer__links-item">
+            {t("footer.link5")}
+          </li>
         </ul>
       </div>
       <div class="footer__links-group">
-        <p class="footer__links-title">Support</p>
+        <p class="footer__links-title">
+          {t("footer.linksTitle2")}
+        </p>
         <ul class="footer__links-list">
-          <li class="footer__links-item">Help Center</li>
-          <li class="footer__links-item">Terms of Service</li>
-          <li class="footer__links-item">Legal</li>
-          <li class="footer__links-item">Privacy Policy</li>
-          <li class="footer__links-item">Status</li>
+          <li class="footer__links-item">
+            {t("footer.link6")}
+          </li>
+          <li class="footer__links-item">
+            {t("footer.link7")}
+          </li>
+          <li class="footer__links-item">
+            {t("footer.link8")}
+          </li>
+          <li class="footer__links-item">
+            {t("footer.link9")}
+          </li>
+          <li class="footer__links-item">
+            {t("footer.link10")}
+          </li>
         </ul>
       </div>
       <div class="footer__subscribe">
-        <p class="footer__subscribe-title">Stay up to date</p>
+        <p class="footer__subscribe-title">
+          {t("footer.subscribe")}
+        </p>
         <input
           type="email"
-          placeholder="Your email address"
+          placeholder={t("footer.placeholder")}
           class="footer__subscribe-input"
         />
         <img

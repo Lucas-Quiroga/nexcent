@@ -35,8 +35,12 @@ const translatePath = useTranslatedPath(lang);
     </ul>
   </div>
   <div class="nav__button-container">
-    <button class="nav__button-login">Login</button>
-    <button class="nav__button-signup">Sign up</button>
+    <button class="nav__button-login">
+      {t("nav.login")}
+    </button>
+    <button class="nav__button-signup">
+      {t("nav.signup")}
+    </button>
     <select id="language-select" class="nav__button-select">
       {
         Object.entries(languages).map(([langCode, label]) => (

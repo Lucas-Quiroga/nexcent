@@ -1,15 +1,22 @@
 ---
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "../i18n/utils";
+import { languages } from "../i18n/ui";
 
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 
 <section class="community">
   <!-- Community Header -->
   <header class="community__header">
-    <h3 class="community__title">Caring is the new marketing</h3>
+    <h3 class="community__title">{t("updates.title")}</h3>
     <p class="community__description">
-      The Nexcent blog is the best place to read about the latest membership
-      insights, trends and more. See who's joining the community, read about how
-      our community are increasing their membership income and lots more.​
+      {t("updates.description")}
     </p>
   </header>
   <!-- Community Cards -->
@@ -22,10 +29,10 @@
       />
       <div class="community__card-content">
         <p class="community__card-text">
-          Creating Streamlined Safeguarding Processes with OneRen
+          {t("updates.card1")}
         </p>
         <div class="community__card-action">
-          <p class="community__card-readmore">Read more</p>
+          <p class="community__card-readmore">{t("updates.buttom")}</p>
           <img
             src="/arrowgreen.png"
             alt="Arrow icon"
@@ -42,11 +49,10 @@
       />
       <div class="community__card-content">
         <p class="community__card-text">
-          What are your safeguarding responsibilities and how can you manage
-          them?
+          {t("updates.card2")}
         </p>
         <div class="community__card-action">
-          <p class="community__card-readmore">Read more</p>
+          <p class="community__card-readmore">{t("updates.buttom")}</p>
           <img
             src="/arrowgreen.png"
             alt="Arrow icon"
@@ -63,10 +69,10 @@
       />
       <div class="community__card-content">
         <p class="community__card-text">
-          Revamping the Membership Model with Triathlon Australia
+          {t("updates.card3")}
         </p>
         <div class="community__card-action">
-          <p class="community__card-readmore">Read more</p>
+          <p class="community__card-readmore">{t("updates.buttom")}</p>
           <img
             src="/arrowgreen.png"
             alt="Arrow icon"

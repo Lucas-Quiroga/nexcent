@@ -1,16 +1,25 @@
 ---
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "../i18n/utils";
+import { languages } from "../i18n/ui";
 
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 
 <section class="achievements">
   <!-- Section heading -->
   <header class="achievements__header">
     <h2 class="achievements__title-wrapper">
-      Helping a local <br />
-      <span class="achievements__highlight">business reinvent itself</span>
+      {t("achievements.title")}<br />
+      <span class="achievements__highlight">{t("achievements.highlight")}</span>
     </h2>
     <p class="achievements__subtitle">
-      We reached here with our hard work and dedication
+      {t("achievements.subtitle")}
     </p>
   </header>
 
@@ -22,16 +31,16 @@
       <article class="achievements__item">
         <img src="/icon1.png" alt="Members icon" class="achievements__icon" />
         <div class="achievements__details">
-          <p class="achievements__number">2,245,341</p>
-          <p class="achievements__label">Members</p>
+          <p class="achievements__number">{t("chievements.number1")}</p>
+          <p class="achievements__label">{t("achievements.label1")}</p>
         </div>
       </article>
       <!-- Item 2 -->
       <article class="achievements__item">
         <img src="/icon2.png" alt="Clubs icon" class="achievements__icon" />
         <div class="achievements__details">
-          <p class="achievements__number">46,328</p>
-          <p class="achievements__label">Clubs</p>
+          <p class="achievements__number">{t("achievements.number2")}</p>
+          <p class="achievements__label">{t("achievements.label2")}</p>
         </div>
       </article>
     </div>
@@ -45,16 +54,16 @@
           class="achievements__icon"
         />
         <div class="achievements__details">
-          <p class="achievements__number">828,867</p>
-          <p class="achievements__label">Event Bookings</p>
+          <p class="achievements__number">{t("achievements.number3")}</p>
+          <p class="achievements__label">{t("achievements.label3")}</p>
         </div>
       </article>
       <!-- Item 4 -->
       <article class="achievements__item">
         <img src="/icon4.png" alt="Payments icon" class="achievements__icon" />
         <div class="achievements__details">
-          <p class="achievements__number">1,926,436</p>
-          <p class="achievements__label">Payments</p>
+          <p class="achievements__number">{t("achievements.number4")}</p>
+          <p class="achievements__label">{t("achievements.label4")}</p>
         </div>
       </article>
     </div>

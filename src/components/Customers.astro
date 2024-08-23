@@ -1,5 +1,14 @@
 ---
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "../i18n/utils";
+import { languages } from "../i18n/ui";
 
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 
 <section class="testimonial">
@@ -13,21 +22,12 @@
   <div class="testimonial__content">
     <blockquote class="testimonial__quote">
       <p class="testimonial__text">
-        Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis
-        sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus.
-        Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut
-        molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie,
-        nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices,
-        quis tristique nulla sodales. Suspendisse eget lorem eu turpis
-        vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien,
-        vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget
-        efficitur libero condimentum id. Curabitur id nibh id sem dignissim
-        finibus ac sit amet magna.
+        {t("testimonial.text")}
       </p>
       <figcaption class="testimonial__author">
-        <p class="testimonial__name">Tim Smith</p>
+        <p class="testimonial__name">{t("testimonial.author")}</p>
         <p class="testimonial__position">
-          British Dragon Boat Racing Association
+          {t("testimonial.position")}
         </p>
       </figcaption>
     </blockquote>
@@ -77,7 +77,7 @@
         </li>
       </ul>
       <div class="testimonial__cta">
-        <p class="testimonial__cta-text">Meet all customers</p>
+        <p class="testimonial__cta-text">{t("testimonial.cta")}</p>
         <button class="testimonial__cta-button">
           <img src="/arrowgreen.png" alt="arrowbutton" />
         </button>

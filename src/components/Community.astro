@@ -1,13 +1,26 @@
 ---
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "../i18n/utils";
+import { languages } from "../i18n/ui";
 
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 
 <section class="community">
   <header class="community__header">
     <p class="community__intro">
-      Manage your entire community <br /> in a single system
+      {
+        t("community.intro")
+          .split("<br />")
+          .map((text) => <span>{text}</span>)
+      }
     </p>
-    <p class="community__title">Who is Nextcent suitable for?</p>
+    <p class="community__title">{t("community.title")}</p>
   </header>
   <ul class="community__list">
     <li class="community__item">
@@ -17,13 +30,12 @@
           alt="Community member 1"
           class="community__image"
         />
-        <p class="community__category">Membership</p>
-        <p class="community__subcategory">Organisations</p>
+        <p class="community__category">{t("community.category1")}</p>
+        <p class="community__subcategory">{t("community.subcategory1")}</p>
       </div>
 
       <p class="community__description">
-        Our membership management software provides full automation of
-        membership renewals and payments
+        {t("community.description1")}
       </p>
     </li>
     <li class="community__item">
@@ -33,13 +45,12 @@
           alt="Community member 2"
           class="community__image"
         />
-        <p class="community__category">National</p>
-        <p class="community__subcategory">Associations</p>
+        <p class="community__category">{t("community.category2")}</p>
+        <p class="community__subcategory">{t("community.subcategory2")}</p>
       </div>
 
       <p class="community__description">
-        Our membership management software provides full automation of
-        membership renewals and payments
+        {t("community.description2")}
       </p>
     </li>
     <li class="community__item">
@@ -49,13 +60,12 @@
           alt="Community member 3"
           class="community__image"
         />
-        <p class="community__category">Clubs And</p>
-        <p class="community__subcategory">Groups</p>
+        <p class="community__category">{t("community.category3")}</p>
+        <p class="community__subcategory">{t("community.subcategory3")}</p>
       </div>
 
       <p class="community__description">
-        Our membership management software provides full automation of
-        membership renewals and payments
+        {t("community.description3")}
       </p>
     </li>
   </ul>
