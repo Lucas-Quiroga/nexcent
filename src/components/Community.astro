@@ -17,7 +17,7 @@ const translatePath = useTranslatedPath(lang);
       {
         t("community.intro")
           .split("<br />")
-          .map((text) => <span>{text}</span>)
+          .map((text: string) => <span>{text}</span>)
       }
     </p>
     <p class="community__title">{t("community.title")}</p>
@@ -172,4 +172,28 @@ const translatePath = useTranslatedPath(lang);
     line-height: var(--line-height-body3);
     text-align: center;
   }
+
+  @media (max-width: 575px) {
+
+    .community {
+      padding: 0 12px;
+    }
+
+    .community__intro {
+      font-size: 30px;
+      line-height: 36px;
+      width: auto;
+    }
+
+    .community__title{
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .community__list {
+      flex-direction: column;
+      gap: 20px;
+      height: auto;
+    }
+
 </style>

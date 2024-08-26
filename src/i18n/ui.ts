@@ -28,19 +28,19 @@ export const ui = {
     "community.category1": "Membership",
     "community.subcategory1": "Organisations",
     "community.description1":
-      "Our membership management software provides full automation of membership renewals and payments",
+      "Our membership management software provides full automation of membership renewals and payments.",
     "community.category2": "National",
     "community.subcategory2": "Associations",
     "community.description2":
-      " Our membership management software provides full automation of membership renewals and payments",
+      "Simplify membership and payment management for national associations with complete automation.",
     "community.category3": "Clubs And",
     "community.subcategory3": "Groups",
     "community.description3":
-      "Our membership management software provides full automation of membership renewals and payments",
+      "Optimize membership and payment management for clubs and groups with complete automation.",
     "feature.headline":
       "The unseen of spending three <br /> years at Pixelgrade",
     "feature.description":
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.",
+      "Diving deep into the world of creativity, these three years at Pixelgrade have unveiled challenges and triumphs that shaped us. From crafting innovative designs to pushing the boundaries of digital experiences, our journey has been nothing short of transformative. We've embraced change, grown through adversity, and emerged stronger, ready for the future.",
     "feature.button": "Learn More",
     "achievements.title": "Helping a local",
     "achievements.highlight": "business reinvent itself",
@@ -56,10 +56,10 @@ export const ui = {
     "achievements.label4": "Payments",
     "calender.title": "How to design your site footer like we did",
     "calender.description":
-      "Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.",
+      "Discover the key elements to crafting an effective site footer as we have done. A well-designed footer not only enhances user experience but also serves as a strategic space for important links and information. Learn how to balance aesthetics with functionality to create a footer that complements your site and meets your needs. Follow our insights to achieve a professional and engaging footer design.",
     "calender.button": "Learn More",
     "testimonial.text":
-      "Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam utmolestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed a ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque males enim sapien, vitae placerat ante feugiat eget. Quisque vulputate  neque, eget efficitur libero condimentum id. Curabitur id nibh id dignissim finibus ac sit amet magna.",
+      "Working with this team has been a transformative experience. Their ability to understand our needs and translate them into effective solutions has been impressive. They not only helped us improve our online presence but also provided ongoing support throughout the process. Their professionalism and dedication are evident in every detail of the work done. I highly recommend their services to anyone seeking exceptional results.",
     "testimonial.author": "Tim Smith",
     "testimonial.position": "British Dragon Boat Racing Association",
     "testimonial.cta": "Meet all customers",
@@ -71,7 +71,7 @@ export const ui = {
       "What are your safeguarding responsibilities and how can you manage them?",
     "updates.card3": "Revamping the Membership Model with Triathlon Australia",
     "updates.buttom": "Read more",
-    "footer.cta": "Pellentesque suscipit fringilla libero eu.",
+    "footer.cta": "Elevate your workflow with our solution.",
     "footer.button": "Get a Demo",
     "footer.copyright": "Copyright © 2020 Nexcent Ltd.",
     "footer.privacy": "All rights reserved",
@@ -95,37 +95,36 @@ export const ui = {
     "nav.feature": "Característica",
     "nav.product": "Producto",
     "nav.testimonial": "Testimonio",
-    "nav.faq": "Preguntas frecuentes",
+    "nav.faq": "Preguntas",
     "nav.login": "Iniciar sesión",
     "nav.signup": "Regístrate",
     "hero.title": "Lecciones e ideas",
     "hero.subtitle": "de 8 años",
     "hero.description":
       "  ¿Dónde crecer tu negocio como fotógrafo: sitio o redes sociales?",
-    "hero.button": "Registrarse",
+    "hero.button": "Regístrate",
     "clients.title": "Nuestros clientes",
-    "clients.subtitle":
-      "Hemos estado trabajando con algunos clientes Fortune 500+",
+    "clients.subtitle": "Hemos trabajado con varios clientes de Fortune 500+",
     "community.intro": "Administra toda tu comunidad <br /> en un solo sistema",
     "community.title": "¿Para quién es adecuado Nextcent?",
     "community.category1": "Membresía",
     "community.subcategory1": "Organizaciones",
     "community.description1":
-      "Nuestro software de gestión de membresías proporciona una automatización completa de renovaciones de membresías y pagos",
+      "Software de gestión de membresías proporciona una automatización completa de renovaciones de membresías y pagos.",
     "community.category2": "Nacional",
     "community.subcategory2": "Asociaciones",
     "community.description2":
-      "Nuestro software de gestión de membresías proporciona una automatización completa de renovaciones de membresías y pagos",
+      "Facilita la gestión de membresías y pagos para asociaciones a nivel nacional con automatización completa.",
     "community.category3": "Clubes y",
     "community.subcategory3": "Grupos",
     "community.description3":
-      "Nuestro software de gestión de membresías proporciona una automatización completa de renovaciones de membresías y pagos",
+      "Optimiza la gestión de membresías y pagos para clubes y grupos con automatización completa.",
     "feature.headline": "Lo no visto de pasar tres <br /> años en Pixelgrade",
     "feature.description":
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.",
+      "Sumergiéndonos en el mundo de la creatividad, estos tres años en Pixelgrade han desvelado desafíos y triunfos que nos han moldeado. Desde crear diseños innovadores hasta superar los límites de las experiencias digitales, nuestro viaje ha sido nada menos que transformador. Hemos abrazado el cambio, crecido a través de la adversidad y emergido más fuertes, listos para el futuro.",
     "feature.button": "Aprende más",
-    "achievements.title": "Ayudando a un local",
-    "achievements.highlight": "negocio a reinventarse",
+    "achievements.title": "Ayudando a un negocio",
+    "achievements.highlight": "local a reinventarse",
     "achievements.subtitle":
       "Llegamos aquí con nuestro arduo trabajo y dedicación",
     "achievements.number1": "2,245,341",
@@ -137,15 +136,15 @@ export const ui = {
     "achievements.number4": "1,926,436",
     "achievements.label4": "Pagos",
     "calender.title":
-      "Cómo diseñar el pie de página de tu sitio como lo hicimos",
+      "Cómo diseñar el pie de página de tu sitio como lo hicimos nosotros",
     "calender.description":
-      "Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.",
+      "Descubre los elementos clave para crear un pie de página efectivo como lo hemos hecho. Un pie de página bien diseñado no solo mejora la experiencia del usuario, sino que también sirve como un espacio estratégico para enlaces e información importantes. Aprende cómo equilibrar la estética con la funcionalidad para crear un pie de página que complemente tu sitio y satisfaga tus necesidades. Sigue nuestros consejos para lograr un diseño profesional y atractivo.",
     "calender.button": "Aprende más",
     "testimonial.text":
-      "Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam utmolestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed a ultrices, quis tristique nulla sodales. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.",
+      "Trabajar con este equipo ha sido una experiencia transformadora. Su habilidad para entender nuestras necesidades y traducirlas en soluciones efectivas ha sido impresionante. No solo nos ayudaron a mejorar nuestra presencia en línea, sino que también nos ofrecieron apoyo continuo durante el proceso. Su profesionalismo y dedicación son evidentes en cada detalle del trabajo realizado. Recomiendo encarecidamente sus servicios a cualquiera que busque resultados excepcionales.",
     "testimonial.author": "Tim Smith",
     "testimonial.position": "Asociación Británica de Carreras de Barcos Dragón",
-    "testimonial.cta": "Conoce a todos los clientes",
+    "testimonial.cta": "Clientes",
     "updates.title": "Cuidar es el nuevo marketing",
     "updates.description":
       "El blog de Nexcent es el mejor lugar para leer sobre las últimas ideas sobre membresías, tendencias y más. Vea quién se está uniendo a la comunidad, lea sobre cómo nuestra comunidad está aumentando sus ingresos por membresía y mucho más.​",
@@ -156,7 +155,7 @@ export const ui = {
     "updates.card3":
       "Renovación del modelo de membresía con Triatlón Australia",
     "updates.buttom": "Leer más",
-    "footer.cta": "Pellentesque suscipit fringilla libero eu.",
+    "footer.cta": "Eleva tu flujo de trabajo con nuestra solución.",
     "footer.button": "Obtener una demostración",
     "footer.copyright": "Copyright © 2020 Nexcent Ltd.",
     "footer.privacy": "Todos los derechos reservados",
@@ -173,6 +172,6 @@ export const ui = {
     "footer.link9": "Política de privacidad",
     "footer.link10": "Estado",
     "footer.subscribe": "Mantente actualizado",
-    "footer.placeholder": "Tu dirección de correo electrónico",
+    "footer.placeholder": "Correo electrónico",
   },
 } as const;

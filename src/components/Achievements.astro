@@ -163,4 +163,49 @@ const translatePath = useTranslatedPath(lang);
     line-height: var(--line-height-body2);
     color: var(--neutral-grey);
   }
+
+  @media (max-width: 575px) {
+    .achievements {
+      flex-direction: column;
+      height: auto;
+      gap: 24px;
+      padding: 0 12px;
+    }
+
+    .achievements__header {
+      width: 100%;
+      height: auto;
+      gap: 16px;
+    }
+
+    .achievements__title-wrapper {
+      width: auto;
+    }
+
+    .achievements__highlight {
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    .achievements__subtitle {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .achievements__counts {
+      width: 100%;
+      height: auto;
+      gap: 16px;
+    }
+
+    .achievements__row {
+      flex-direction: column;
+      gap: 16px;
+      height: auto;
+    }
+
+    .achievements__item {
+      width: 100%;
+    }
+  }
 </style>
