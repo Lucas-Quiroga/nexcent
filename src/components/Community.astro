@@ -1,14 +1,8 @@
 ---
-import {
-  getLangFromUrl,
-  useTranslations,
-  useTranslatedPath,
-} from "../i18n/utils";
-import { languages } from "../i18n/ui";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-const translatePath = useTranslatedPath(lang);
 ---
 
 <section class="community">
@@ -29,6 +23,7 @@ const translatePath = useTranslatedPath(lang);
           src="/community1.png"
           alt="Community member 1"
           class="community__image"
+          loading="lazy"
         />
         <p class="community__category">{t("community.category1")}</p>
         <p class="community__subcategory">{t("community.subcategory1")}</p>
@@ -44,6 +39,7 @@ const translatePath = useTranslatedPath(lang);
           src="/community2.png"
           alt="Community member 2"
           class="community__image"
+          loading="lazy"
         />
         <p class="community__category">{t("community.category2")}</p>
         <p class="community__subcategory">{t("community.subcategory2")}</p>
@@ -59,6 +55,7 @@ const translatePath = useTranslatedPath(lang);
           src="/community3.png"
           alt="Community member 3"
           class="community__image"
+          loading="lazy"
         />
         <p class="community__category">{t("community.category3")}</p>
         <p class="community__subcategory">{t("community.subcategory3")}</p>

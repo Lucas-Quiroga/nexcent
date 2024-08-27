@@ -46,7 +46,7 @@ export const ui = {
     "achievements.highlight": "business reinvent itself",
     "achievements.subtitle":
       "We reached here with our hard work and dedication",
-    "chievements.number1": "2,245,341",
+    "achievements.number1": "2,245,341",
     "achievements.label1": "Members",
     "achievements.number2": "46,328",
     "achievements.label2": "Clubs",

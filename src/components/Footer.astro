@@ -1,14 +1,8 @@
 ---
-import {
-  getLangFromUrl,
-  useTranslations,
-  useTranslatedPath,
-} from "../i18n/utils";
-import { languages } from "../i18n/ui";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-const translatePath = useTranslatedPath(lang);
 ---
 
 <footer class="footer">
@@ -16,7 +10,12 @@ const translatePath = useTranslatedPath(lang);
     <p class="footer__cta-text">{t("footer.cta")}</p>
     <button class="footer__cta-button">
       {t("footer.button")}
-      <img src="/whitearrow.png" alt="Arrow icon" class="footer__cta-icon" />
+      <img
+        src="/whitearrow.png"
+        alt="Arrow icon"
+        class="footer__cta-icon"
+        loading="lazy"
+      />
     </button>
   </div>
   <div class="footer__content">
@@ -26,6 +25,7 @@ const translatePath = useTranslatedPath(lang);
         src="/logofooter.png"
         alt="Nexcent logo"
         class="footer__company-logo"
+        loading="lazy"
       />
 
       <div class="footer__company-info">
@@ -38,10 +38,30 @@ const translatePath = useTranslatedPath(lang);
       </div>
       <!-- Social links -->
       <div class="footer__social">
-        <img src="/instagram.png" alt="Instagram" class="footer__social-icon" />
-        <img src="/dribble.png" alt="Dribbble" class="footer__social-icon" />
-        <img src="/twitter.png" alt="Twitter" class="footer__social-icon" />
-        <img src="/youtube.png" alt="YouTube" class="footer__social-icon" />
+        <img
+          src="/instagram.png"
+          alt="Instagram"
+          class="footer__social-icon"
+          loading="lazy"
+        />
+        <img
+          src="/dribble.png"
+          alt="Dribbble"
+          class="footer__social-icon"
+          loading="lazy"
+        />
+        <img
+          src="/twitter.png"
+          alt="Twitter"
+          class="footer__social-icon"
+          loading="lazy"
+        />
+        <img
+          src="/youtube.png"
+          alt="YouTube"
+          class="footer__social-icon"
+          loading="lazy"
+        />
       </div>
     </div>
     <!-- Links -->
@@ -103,6 +123,7 @@ const translatePath = useTranslatedPath(lang);
           src="/essential.png"
           alt="send-icon"
           class="footer__subscribe-img"
+          loading="lazy"
         />
       </div>
     </div>

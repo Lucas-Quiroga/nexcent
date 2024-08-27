@@ -1,14 +1,8 @@
 ---
-import {
-  getLangFromUrl,
-  useTranslations,
-  useTranslatedPath,
-} from "../i18n/utils";
-import { languages } from "../i18n/ui";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-const translatePath = useTranslatedPath(lang);
 ---
 
 <section class="clients">
@@ -134,8 +128,8 @@ const translatePath = useTranslatedPath(lang);
       gap: 1rem;
       width: 100%;
       height: auto;
-      justify-items: center; /* Centra horizontalmente los elementos dentro de cada celda */
-      align-items: center; /* Centra verticalmente los elementos dentro de cada celda */
+      justify-items: center;
+      align-items: center;
       padding: 15px 0px;
 
       & li {

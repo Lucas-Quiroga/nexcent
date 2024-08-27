@@ -1,19 +1,20 @@
 ---
-import {
-  getLangFromUrl,
-  useTranslations,
-  useTranslatedPath,
-} from "../i18n/utils";
-import { languages } from "../i18n/ui";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import { Image } from "astro:assets";
+import UnlockImg from "../../public/unlock.png";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-const translatePath = useTranslatedPath(lang);
 ---
 
 <section class="feature">
   <figure class="feature__image-wrapper">
-    <img src="/unlock.png" alt="Mobile login logo" class="feature__image" />
+    <Image
+      class="feature__image"
+      src={UnlockImg}
+      alt="Unlock"
+      loading={"lazy"}
+    />
   </figure>
   <div class="feature__content">
     <header class="feature__header">

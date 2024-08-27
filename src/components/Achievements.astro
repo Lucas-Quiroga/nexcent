@@ -1,14 +1,7 @@
 ---
-import {
-  getLangFromUrl,
-  useTranslations,
-  useTranslatedPath,
-} from "../i18n/utils";
-import { languages } from "../i18n/ui";
-
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-const translatePath = useTranslatedPath(lang);
 ---
 
 <section class="achievements">
@@ -29,15 +22,25 @@ const translatePath = useTranslatedPath(lang);
     <div class="achievements__row">
       <!-- Item 1 -->
       <article class="achievements__item">
-        <img src="/icon1.png" alt="Members icon" class="achievements__icon" />
+        <img
+          src="/icon1.png"
+          alt="Members icon"
+          class="achievements__icon"
+          loading="lazy"
+        />
         <div class="achievements__details">
-          <p class="achievements__number">{t("chievements.number1")}</p>
+          <p class="achievements__number">{t("achievements.number1")}</p>
           <p class="achievements__label">{t("achievements.label1")}</p>
         </div>
       </article>
       <!-- Item 2 -->
       <article class="achievements__item">
-        <img src="/icon2.png" alt="Clubs icon" class="achievements__icon" />
+        <img
+          src="/icon2.png"
+          alt="Clubs icon"
+          class="achievements__icon"
+          loading="lazy"
+        />
         <div class="achievements__details">
           <p class="achievements__number">{t("achievements.number2")}</p>
           <p class="achievements__label">{t("achievements.label2")}</p>
@@ -52,6 +55,7 @@ const translatePath = useTranslatedPath(lang);
           src="/icon3.png"
           alt="Event bookings icon"
           class="achievements__icon"
+          loading="lazy"
         />
         <div class="achievements__details">
           <p class="achievements__number">{t("achievements.number3")}</p>
@@ -60,7 +64,12 @@ const translatePath = useTranslatedPath(lang);
       </article>
       <!-- Item 4 -->
       <article class="achievements__item">
-        <img src="/icon4.png" alt="Payments icon" class="achievements__icon" />
+        <img
+          src="/icon4.png"
+          alt="Payments icon"
+          class="achievements__icon"
+          loading="lazy"
+        />
         <div class="achievements__details">
           <p class="achievements__number">{t("achievements.number4")}</p>
           <p class="achievements__label">{t("achievements.label4")}</p>

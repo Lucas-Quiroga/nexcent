@@ -1,14 +1,10 @@
 ---
-import {
-  getLangFromUrl,
-  useTranslations,
-  useTranslatedPath,
-} from "../i18n/utils";
-import { languages } from "../i18n/ui";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import { Image } from "astro:assets";
+import HeroImg from "../../public/heroimg.png";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-const translatePath = useTranslatedPath(lang);
 ---
 
 <section class="hero">
@@ -23,11 +19,7 @@ const translatePath = useTranslatedPath(lang);
     <button class="hero__button" type="button">{t("hero.button")}</button>
   </div>
   <div class="hero__image-wrapper animate__animated animate__fadeInRight">
-    <img
-      src="/heroimg.png"
-      alt="Photography business growth insights"
-      class="hero__image"
-    />
+    <Image class="hero__image" src={HeroImg} alt="Hero" loading={"eager"} />
   </div>
 </section>
 

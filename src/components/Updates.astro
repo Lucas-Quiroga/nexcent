@@ -1,14 +1,12 @@
 ---
-import {
-  getLangFromUrl,
-  useTranslations,
-  useTranslatedPath,
-} from "../i18n/utils";
-import { languages } from "../i18n/ui";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import { Image } from "astro:assets";
+import UpdateImg1 from "../../public/updateimg1.png";
+import UpdateImg2 from "../../public/updateimg2.png";
+import UpdateImg3 from "../../public/updateimg3.png";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-const translatePath = useTranslatedPath(lang);
 ---
 
 <section class="community">
@@ -22,11 +20,7 @@ const translatePath = useTranslatedPath(lang);
   <!-- Community Cards -->
   <div class="community__cards">
     <article class="community__card">
-      <img
-        src="/updateimg1.png"
-        alt="Article 1"
-        class="community__card-image"
-      />
+      <Image src={UpdateImg1} alt="Article 1" class="community__card-image" />
       <div class="community__card-content">
         <p class="community__card-text">
           {t("updates.card1")}
@@ -37,16 +31,13 @@ const translatePath = useTranslatedPath(lang);
             src="/arrowgreen.png"
             alt="Arrow icon"
             class="community__card-arrow"
+            loading="lazy"
           />
         </div>
       </div>
     </article>
     <article class="community__card">
-      <img
-        src="/updateimg2.png"
-        alt="Article 2"
-        class="community__card-image"
-      />
+      <Image src={UpdateImg2} alt="Article 1" class="community__card-image" />
       <div class="community__card-content">
         <p class="community__card-text">
           {t("updates.card2")}
@@ -57,16 +48,13 @@ const translatePath = useTranslatedPath(lang);
             src="/arrowgreen.png"
             alt="Arrow icon"
             class="community__card-arrow"
+            loading="lazy"
           />
         </div>
       </div>
     </article>
     <article class="community__card">
-      <img
-        src="/updateimg3.png"
-        alt="Article 3"
-        class="community__card-image"
-      />
+      <Image src={UpdateImg3} alt="Article 1" class="community__card-image" />
       <div class="community__card-content">
         <p class="community__card-text">
           {t("updates.card3")}
@@ -77,6 +65,7 @@ const translatePath = useTranslatedPath(lang);
             src="/arrowgreen.png"
             alt="Arrow icon"
             class="community__card-arrow"
+            loading="lazy"
           />
         </div>
       </div>
