@@ -90,7 +90,7 @@ const translatePath = useTranslatedPath(lang);
 
   .achievements__title-wrapper {
     width: 408px;
-    height: 88px;
+    height: auto;
   }
 
   .achievements__title-wrapper,
@@ -136,6 +136,12 @@ const translatePath = useTranslatedPath(lang);
     width: 50%;
   }
 
+  .achievements__item:hover {
+    background-color: var(--neutral-white);
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
   .achievements__icon {
     width: 48px;
     height: 48px;
@@ -169,17 +175,21 @@ const translatePath = useTranslatedPath(lang);
       flex-direction: column;
       height: auto;
       gap: 24px;
-      padding: 0 12px;
+      padding: 40px 32px;
+      justify-content: center;
+      align-items: center;
     }
 
     .achievements__header {
       width: 100%;
       height: auto;
-      gap: 16px;
+      gap: 6px;
     }
 
     .achievements__title-wrapper {
       width: auto;
+      font-size: 40px;
+      text-align: center;
     }
 
     .achievements__highlight {
@@ -190,6 +200,7 @@ const translatePath = useTranslatedPath(lang);
     .achievements__subtitle {
       font-size: 16px;
       line-height: 24px;
+      text-align: center;
     }
 
     .achievements__counts {
@@ -199,13 +210,27 @@ const translatePath = useTranslatedPath(lang);
     }
 
     .achievements__row {
-      flex-direction: column;
+      flex-direction: row;
       gap: 16px;
       height: auto;
+      width: 100%;
     }
 
     .achievements__item {
       width: 100%;
+      height: auto;
+      background-color: var(--neutral-white);
+      border-radius: 8px;
+    }
+
+    .achievements__number {
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    .achievements__label {
+      font-size: 14px;
+      line-height: 22px;
     }
   }
 </style>

@@ -139,6 +139,15 @@ const translatePath = useTranslatedPath(lang);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 8px;
     box-sizing: border-box;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .community__item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
 
   .community__item-header {
@@ -174,18 +183,17 @@ const translatePath = useTranslatedPath(lang);
   }
 
   @media (max-width: 575px) {
-
     .community {
-      padding: 0 12px;
+      padding: 0 32px;
     }
 
     .community__intro {
-      font-size: 30px;
-      line-height: 36px;
+      font-size: 26px;
+      line-height: 32px;
       width: auto;
     }
 
-    .community__title{
+    .community__title {
       font-size: 16px;
       line-height: 24px;
     }
@@ -196,4 +204,14 @@ const translatePath = useTranslatedPath(lang);
       height: auto;
     }
 
+    .community__item {
+      width: 100%;
+      padding: 16px;
+    }
+
+    .community__item-header {
+      width: 100%;
+      height: auto;
+    }
+  }
 </style>

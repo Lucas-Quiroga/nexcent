@@ -132,7 +132,7 @@ export const ui = {
     "achievements.number2": "46,328",
     "achievements.label2": "Clubes",
     "achievements.number3": "828,867",
-    "achievements.label3": "Reservas de eventos",
+    "achievements.label3": "Reservas",
     "achievements.number4": "1,926,436",
     "achievements.label4": "Pagos",
     "calender.title":

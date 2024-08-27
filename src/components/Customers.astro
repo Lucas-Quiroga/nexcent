@@ -173,6 +173,16 @@ const translatePath = useTranslatedPath(lang);
     margin: 0;
   }
 
+  .testimonial__customer-item {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.3s ease;
+  }
+
+  .testimonial__customer-item:hover {
+    transform: scale(1.1);
+  }
+
   .testimonial__customer-img {
     width: 48px;
     height: 48px;
@@ -185,6 +195,7 @@ const translatePath = useTranslatedPath(lang);
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
 
   .testimonial__cta-text {
@@ -207,19 +218,31 @@ const translatePath = useTranslatedPath(lang);
       flex-direction: column;
       height: auto;
       gap: 24px;
-      padding: 0 12px;
+      padding: 32px;
+    }
+
+    .testimonial__image-wrapper {
+      width: 100%;
+      height: auto;
+      display: none;
     }
 
     .testimonial__image {
       width: 100%;
       height: auto;
+      object-fit: cover;
     }
 
     .testimonial__content {
       width: 100%;
       height: auto;
-      gap: 24px;
+      gap: 6px;
       padding: 0 12px;
+    }
+
+    .testimonial__text {
+      font-size: 16px;
+      line-height: 24px;
     }
 
     .testimonial__quote {
@@ -245,9 +268,14 @@ const translatePath = useTranslatedPath(lang);
     .testimonial__customer-list {
       width: 100%;
       height: auto;
-      gap: 16px;
+      gap: 0px;
       display: flex;
       flex-wrap: wrap;
+    }
+
+    .testimonial__customer-item {
+      width: 48px;
+      height: 48px;
     }
   }
 </style>

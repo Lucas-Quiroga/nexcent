@@ -12,7 +12,7 @@ const translatePath = useTranslatedPath(lang);
 ---
 
 <section class="clients">
-  <header class="clients__header">
+  <header class="clients__header animate__animated animate__fadeInUp">
     <p class="clients__title">{t("clients.title")}</p>
     <p class="clients__subtitle">
       {t("clients.subtitle")}
@@ -45,7 +45,7 @@ const translatePath = useTranslatedPath(lang);
 
 <style>
   .clients {
-    padding: 2rem;
+    padding: 2rem 32px;
     background-color: #ffffff;
     text-align: center;
     display: flex;
@@ -57,6 +57,7 @@ const translatePath = useTranslatedPath(lang);
   .clients__header {
     width: 1110px;
     height: 76px;
+    position: relative;
   }
 
   .clients__title {
@@ -92,8 +93,12 @@ const translatePath = useTranslatedPath(lang);
   .clients__item {
     width: 48px;
     height: 48px;
-
     object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .clients__item:hover {
+    transform: scale(1.1);
   }
 
   .clients__logo {

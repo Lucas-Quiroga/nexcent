@@ -1,54 +1,40 @@
-# Astro Starter Kit: Basics
+# Nexcent Landing Page Design 📢
 
-```sh
-npm create astro@latest -- --template basics
-```
+Bienvenido a Nexcent, una landing page diseñada con elegancia y funcionalidad en mente, especialmente para agencias, empresas, fintechs y más.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Vista Previa 📷
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+![web](https://res.cloudinary.com/dncmrwppr/image/upload/v1724797575/landingnexcent_fuomlm.jpg)
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+### Demo 👁‍🗨
 
-## 🚀 Project Structure
+- [VER EN VIVO](https://positivus-azure.vercel.app/) - Website
 
-Inside of your Astro project, you'll see the following folders and files:
+## Características destacadas ⭐
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- Diseño Responsive: Optimizado para asegurar una experiencia fluida tanto en móviles como en escritorio.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+- Ancho Estándar de 1440px: Proporciona un diseño limpio y moderno que se adapta perfectamente a las resoluciones más comunes.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- Estética Elegante y Profesional: Ideal para agencias, empresas, fintechs y más, garantizando una impresión duradera en los visitantes.
 
-Any static assets, like images, can be placed in the `public/` directory.
+- Optimización SEO: Estructura diseñada para mejorar la visibilidad en motores de búsqueda y atraer más tráfico a tu sitio.
 
-## 🧞 Commands
+- Carga Rápida: Optimización de imágenes y código para garantizar tiempos de carga rápidos, mejorando la experiencia del usuario.
 
-All commands are run from the root of the project, from a terminal:
+## Agradecimientos 💌
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Este diseño fue creado por Muntasir Billah. Puedes ver más de su trabajo en su [perfil de Figma](https://www.figma.com/@itsmuntasirb).
 
-## 👀 Want to learn more?
+## Fuente del Diseño en Figma 🎨
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Puedes acceder al diseño original en Figma en el siguiente enlace: [Diseño](https://www.figma.com/community/file/1222060007934600841).
+
+## Tecnologías Utilizadas 💻
+
+Este proyecto fue desarrollado utilizando:
+
+- Astro
+- Vanilla CSS y Animate.style
+- Javascript
+- Typescript

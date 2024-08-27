@@ -12,7 +12,7 @@ const translatePath = useTranslatedPath(lang);
 ---
 
 <section class="hero">
-  <div class="hero__content">
+  <div class="hero__content animate__animated animate__fadeInLeft">
     <header class="hero__header">
       <h1 class="hero__title">{t("hero.title")}<br /></h1>
       <p class="hero__subtitle">{t("hero.subtitle")}</p>
@@ -22,7 +22,7 @@ const translatePath = useTranslatedPath(lang);
     </p>
     <button class="hero__button" type="button">{t("hero.button")}</button>
   </div>
-  <div class="hero__image-wrapper">
+  <div class="hero__image-wrapper animate__animated animate__fadeInRight">
     <img
       src="/heroimg.png"
       alt="Photography business growth insights"
@@ -42,6 +42,7 @@ const translatePath = useTranslatedPath(lang);
     max-width: 100%;
     box-sizing: border-box;
     height: 600px;
+    overflow: hidden;
   }
 
   .hero__content {
@@ -90,7 +91,7 @@ const translatePath = useTranslatedPath(lang);
   }
 
   .hero__button:hover {
-    background-color: #0056b3;
+    background-color: #39883c;
   }
 
   .hero__image-wrapper {
@@ -110,6 +111,7 @@ const translatePath = useTranslatedPath(lang);
       height: auto;
       margin: 0;
       padding: 0;
+      z-index: 1;
     }
 
     .hero__content {
