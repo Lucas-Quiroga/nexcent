@@ -8,7 +8,7 @@ Bienvenido a Nexcent, una landing page diseñada con elegancia y funcionalidad e
 
 ### Demo 👁‍🗨
 
-- [VER EN VIVO](https://positivus-azure.vercel.app/) - Website
+- [VER EN VIVO](https://nexcent-gules.vercel.app/) - Website
 
 ## Características destacadas ⭐
 
